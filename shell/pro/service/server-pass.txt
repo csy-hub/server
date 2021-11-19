@@ -1,0 +1,14 @@
+cd service/SService-pass
+git checkout master
+git merge test
+git push
+cd ..
+git status
+git add SService-pass
+git commit -m 'service版本信息上传'
+git push
+cd ..
+git add service
+git commit -m 'server版本信息上传'
+git push
+git submodule foreach --recursive git checkout dev

@@ -1,0 +1,7 @@
+cd pass/SPass-channel
+git checkout test
+git merge dev
+git push
+git checkout dev
+cd ..
+cd ..

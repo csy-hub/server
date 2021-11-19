@@ -1,0 +1,10 @@
+cd registry
+git checkout master
+git merge test
+git push
+cd ..
+git status
+git add registry
+git commit -m 'server版本信息上传'
+git push
+git submodule foreach --recursive git checkout dev

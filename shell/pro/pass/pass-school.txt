@@ -1,0 +1,14 @@
+cd pass/SPass-school
+git checkout master
+git merge test
+git push
+cd ..
+git status
+git add SPass-school
+git commit -m 'pass版本信息上传'
+git push
+cd ..
+git add pass
+git commit -m 'server版本信息上传'
+git push
+git submodule foreach --recursive git checkout dev

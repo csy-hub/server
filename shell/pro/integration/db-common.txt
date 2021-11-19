@@ -1,0 +1,14 @@
+cd integration/db-common
+git checkout master
+git merge test
+git push
+cd ..
+git status
+git add db-common
+git commit -m 'integration版本信息上传'
+git push
+cd ..
+git add integration
+git commit -m 'server版本信息上传'
+git push
+git submodule foreach --recursive git checkout dev

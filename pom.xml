@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.myyule.server</groupId>
+    <artifactId>myyule-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <hutool.version>4.1.13</hutool.version>
+        <java.version>1.8</java.version>
+        <!-- 切换boot版本-->
+        <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
+        <!--<spring-boot.version>2.2.0.RELEASE</spring-boot.version>-->
+        <spring-platform.version>Cairo-SR3</spring-platform.version>
+        <spring-cloud-dependencies.version>Finchley.SR2</spring-cloud-dependencies.version>
+        <spring-cloud.eureka.version>2.0.2.RELEASE</spring-cloud.eureka.version>
+        <fastjson.version>1.2.60</fastjson.version>
+        <common.version>1.0-SNAPSHOT</common.version>
+        <spring-cloud-alibaba.version>2.0.3.RELEASE</spring-cloud-alibaba.version>
+     </properties>
+
+    <modules>
+        <!--公共模块 -->
+        <module>integration</module>
+        <!--网关 -->
+        <module>gateway</module>
+        <!--注册中心 -->
+        <module>registry</module>
+        <!--调用能力服务  -->
+        <module>service</module>
+        <!--服务提供 能力模块-->
+        <module>pass</module>
+        <!--服务监控模块-->
+        <module>monitor</module>
+        <!-- 配置中心模块 -->
+        <module>config</module>
+        <!-- 公共服务 -->
+        <module>public</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.spring.platform</groupId>
+                <artifactId>platform-bom</artifactId>
+                <version>${spring-platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud-dependencies.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+                <version>${spring-cloud.eureka.version}</version>
+            </dependency> -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <!--关系型数据库-->
+            <dependency>
+                <groupId>com.myyule.server</groupId>
+                <artifactId>db-common</artifactId>
+                <version>${common.version}</version>
+            </dependency>
+            <!--日志-->
+            <dependency>
+                <groupId>com.myyule.server</groupId>
+                <artifactId>log-common</artifactId>
+                <version>${common.version}</version>
+            </dependency>
+            <!--公共api-->
+            <dependency>
+                <groupId>com.myyule.server</groupId>
+                <artifactId>api-common</artifactId>
+                <version>${common.version}</version>
+            </dependency>
+            
+            </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <goals>
+                        <goal>repackage</goal>
+                    </goals>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <target>${java.version}</target>
+                        <source>${java.version}</source>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <configuration>
+                        <archive>
+                            <addMavenDescriptor>false</addMavenDescriptor>
+                        </archive>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                    <include>**/*.tld</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.yml</include>
+                    <include>**/*.xml</include>
+                    <include>**/*.tld</include>
+                    <include>**/*.json</include>
+                    <include>**/*.jks</include>
+                    <include>**/*.ftl</include>
+                    <include>**/*.ttc</include>
+                    <include>**/*.dic</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
+
+</project>

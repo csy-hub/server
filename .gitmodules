@@ -1,0 +1,24 @@
+[submodule "config"]
+	path = config
+	url = http://git.si-tech.com.cn:9002/myyule/config.git
+[submodule "gateway"]
+	path = gateway
+	url = http://git.si-tech.com.cn:9002/myyule/gateway.git
+[submodule "integration"]
+	path = integration
+	url = http://git.si-tech.com.cn:9002/myyule/integration.git
+[submodule "pass"]
+	path = pass
+	url = http://git.si-tech.com.cn:9002/myyule/pass.git
+[submodule "public"]
+	path = public
+	url = http://git.si-tech.com.cn:9002/myyule/public.git
+[submodule "registry"]
+	path = registry
+	url = http://git.si-tech.com.cn:9002/myyule/registry.git
+[submodule "service"]
+	path = service
+	url = http://git.si-tech.com.cn:9002/myyule/service.git
+[submodule "turbine"]
+	path = turbine
+	url = http://git.si-tech.com.cn:9002/myyule/turbine.git

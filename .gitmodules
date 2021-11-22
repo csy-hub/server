@@ -22,3 +22,6 @@
 [submodule "turbine"]
 	path = turbine
 	url = http://git.si-tech.com.cn:9002/myyule/turbine.git
+[submodule "monitor"]
+	path = monitor
+	url = http://git.si-tech.com.cn:9002/myyule/monitor.git

@@ -1,5 +1,6 @@
 cd public/SPublic-common
 git checkout test
+git pull
 git merge dev
 git push
 git checkout dev

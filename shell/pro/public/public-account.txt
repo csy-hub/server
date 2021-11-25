@@ -1,13 +1,18 @@
 cd public/SPublic-account
 git checkout master
+git pull
 git merge test
 git push
 cd ..
+git checkout master
+git pull
 git status
 git add SPublic-account
 git commit -m 'public版本信息上传'
 git push
 cd ..
+git checkout master
+git pull
 git add public
 git commit -m 'server版本信息上传'
 git push

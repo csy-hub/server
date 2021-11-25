@@ -1,13 +1,18 @@
 cd service/SService-pass
 git checkout master
+git pull
 git merge test
 git push
 cd ..
+git checkout master
+git pull
 git status
 git add SService-pass
 git commit -m 'service版本信息上传'
 git push
 cd ..
+git checkout master
+git pull
 git add service
 git commit -m 'server版本信息上传'
 git push

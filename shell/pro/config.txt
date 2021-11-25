@@ -1,8 +1,11 @@
 cd config
 git checkout master
+git pull
 git merge test
 git push
 cd ..
+git checkout master
+git pull
 git status
 git add config
 git commit -m 'server版本信息上传'

@@ -1,8 +1,11 @@
 cd registry
 git checkout master
+git pull
 git merge test
 git push
 cd ..
+git checkout master
+git pull
 git status
 git add registry
 git commit -m 'server版本信息上传'

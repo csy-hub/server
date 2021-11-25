@@ -1,0 +1,7 @@
+cd gateway
+git checkout master
+git pull
+git merge test
+git push
+git checkout dev
+cd ..

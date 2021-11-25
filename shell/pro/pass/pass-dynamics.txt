@@ -1,13 +1,18 @@
 cd pass/SPass-dynamics
 git checkout master
+git pull
 git merge test
 git push
 cd ..
+git checkout master
+git pull
 git status
 git add SPass-dynamics
 git commit -m 'pass版本信息上传'
 git push
 cd ..
+git checkout master
+git pull
 git add pass
 git commit -m 'server版本信息上传'
 git push

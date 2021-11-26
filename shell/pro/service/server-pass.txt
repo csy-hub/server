@@ -8,12 +8,12 @@ git checkout master
 git pull
 git status
 git add SService-pass
-git commit -m 'service版本信息上传'
+git commit -m 'service版本信息上传' SService-pass
 git push
 cd ..
 git checkout master
 git pull
 git add service
-git commit -m 'server版本信息上传'
+git commit -m 'server版本信息上传' service
 git push
 git submodule foreach --recursive git checkout dev

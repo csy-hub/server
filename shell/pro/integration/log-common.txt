@@ -8,12 +8,12 @@ git checkout master
 git pull
 git status
 git add log-common
-git commit -m 'integration版本信息上传'
+git commit -m 'integration版本信息上传' log-common
 git push
 cd ..
 git checkout master
 git pull
 git add integration
-git commit -m 'server版本信息上传'
+git commit -m 'server版本信息上传' integration
 git push
 git submodule foreach --recursive git checkout dev

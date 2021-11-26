@@ -8,12 +8,12 @@ git checkout master
 git pull
 git status
 git add SPublic-common
-git commit -m 'public版本信息上传'
+git commit -m 'public版本信息上传' SPublic-common
 git push
 cd ..
 git checkout master
 git pull
 git add public
-git commit -m 'server版本信息上传'
+git commit -m 'server版本信息上传' public
 git push
 git submodule foreach --recursive git checkout dev

@@ -8,12 +8,12 @@ git checkout master
 git pull
 git status
 git add admin-server
-git commit -m 'monitor版本信息上传'
+git commit -m 'monitor版本信息上传' admin-server
 git push
 cd ..
 git checkout master
 git pull
 git add monitor
-git commit -m 'server版本信息上传'
+git commit -m 'server版本信息上传' monitor
 git push
 git submodule foreach --recursive git checkout dev

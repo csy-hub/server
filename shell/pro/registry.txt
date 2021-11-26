@@ -8,6 +8,6 @@ git checkout master
 git pull
 git status
 git add registry
-git commit -m 'server版本信息上传'
+git commit -m 'server版本信息上传' registry
 git push
 git submodule foreach --recursive git checkout dev

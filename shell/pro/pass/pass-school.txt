@@ -8,12 +8,12 @@ git checkout master
 git pull
 git status
 git add SPass-school
-git commit -m 'pass版本信息上传'
+git commit -m 'pass版本信息上传' SPass-school
 git push
 cd ..
 git checkout master
 git pull
 git add pass
-git commit -m 'server版本信息上传'
+git commit -m 'server版本信息上传' pass
 git push
 git submodule foreach --recursive git checkout dev

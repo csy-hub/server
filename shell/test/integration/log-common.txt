@@ -1,8 +1,19 @@
 cd integration/log-common
-git checkout test
+git checkout master
 git pull
-git merge dev
+git merge test
 git push
-git checkout dev
 cd ..
+git checkout master
+git pull
+git status
+git add log-common
+git commit -m 'integration版本信息上传'
+git push
 cd ..
+git checkout master
+git pull
+git add integration
+git commit -m 'server版本信息上传'
+git push
+git submodule foreach --recursive git checkout dev

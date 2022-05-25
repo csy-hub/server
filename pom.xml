@@ -18,7 +18,7 @@
         <spring-platform.version>Cairo-SR3</spring-platform.version>
         <spring-cloud-dependencies.version>Finchley.SR2</spring-cloud-dependencies.version>
         <spring-cloud.eureka.version>2.0.2.RELEASE</spring-cloud.eureka.version>
-        <fastjson.version>1.2.60</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <common.version>1.0-SNAPSHOT</common.version>
         <spring-cloud-alibaba.version>2.0.3.RELEASE</spring-cloud-alibaba.version>
      </properties>

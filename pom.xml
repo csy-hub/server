@@ -23,24 +23,24 @@
         <spring-cloud-alibaba.version>2.0.3.RELEASE</spring-cloud-alibaba.version>
      </properties>
 
-    <modules>
-        <!--公共模块 -->
+    <!--<modules>
+        &lt;!&ndash;公共模块 &ndash;&gt;
         <module>integration</module>
-        <!--网关 -->
+        &lt;!&ndash;网关 &ndash;&gt;
         <module>gateway</module>
-        <!--注册中心 -->
+        &lt;!&ndash;注册中心 &ndash;&gt;
         <module>registry</module>
-        <!--调用能力服务  -->
+        &lt;!&ndash;调用能力服务  &ndash;&gt;
         <module>service</module>
-        <!--服务提供 能力模块-->
+        &lt;!&ndash;服务提供 能力模块&ndash;&gt;
         <module>pass</module>
-        <!--服务监控模块-->
+        &lt;!&ndash;服务监控模块&ndash;&gt;
         <module>monitor</module>
-        <!-- 配置中心模块 -->
+        &lt;!&ndash; 配置中心模块 &ndash;&gt;
         <module>config</module>
-        <!-- 公共服务 -->
+        &lt;!&ndash; 公共服务 &ndash;&gt;
         <module>public</module>
-    </modules>
+    </modules>-->
 
     <dependencies>
         <dependency>

@@ -1,27 +1,27 @@
 [submodule "config"]
 	path = config
-	url = http://172.18.238.62:9002/myyule/config.git
+	url = git@172.18.238.62:myyule/config.git
 [submodule "gateway"]
 	path = gateway
-	url = http://172.18.238.62:9002/myyule/gateway.git
+	url = git@172.18.238.62:myyule/gateway.git
 [submodule "integration"]
 	path = integration
-	url = http://172.18.238.62:9002/myyule/integration.git
+	url = git@172.18.238.62:myyule/integration.git
 [submodule "pass"]
 	path = pass
-	url = http://172.18.238.62:9002/myyule/pass.git
+	url = git@172.18.238.62:myyule/pass.git
 [submodule "public"]
 	path = public
-	url = http://172.18.238.62:9002/myyule/public.git
+	url = git@172.18.238.62:myyule/public.git
 [submodule "registry"]
 	path = registry
-	url = http://172.18.238.62:9002/myyule/registry.git
+	url = git@172.18.238.62:myyule/registry.git
 [submodule "service"]
 	path = service
-	url = http://172.18.238.62:9002/myyule/service.git
+	url = git@172.18.238.62:myyule/service.git
 [submodule "turbine"]
 	path = turbine
-	url = http://172.18.238.62:9002/myyule/turbine.git
+	url = git@172.18.238.62:myyule/turbine.git
 [submodule "monitor"]
 	path = monitor
-	url = http://172.18.238.62:9002/myyule/monitor.git
+	url = git@172.18.238.62:myyule/monitor.git

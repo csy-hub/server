@@ -1,6 +1,4 @@
-[submodule "config"]
-	path = config
-	url = git@code.tiancloud.com:myyule/config.git
+
 [submodule "gateway"]
 	path = gateway
 	url = git@code.tiancloud.com:myyule/gateway.git
@@ -13,15 +11,8 @@
 [submodule "public"]
 	path = public
 	url = git@code.tiancloud.com:myyule/public.git
-[submodule "registry"]
-	path = registry
-	url = git@code.tiancloud.com:myyule/registry.git
+
 [submodule "service"]
 	path = service
 	url = git@code.tiancloud.com:myyule/service.git
-[submodule "turbine"]
-	path = turbine
-	url = git@code.tiancloud.com:myyule/turbine.git
-[submodule "monitor"]
-	path = monitor
-	url = git@code.tiancloud.com:myyule/monitor.git
+

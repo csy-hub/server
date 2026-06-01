@@ -29,7 +29,7 @@
         <!--网关 -->
         <module>gateway</module>
 <!--        &lt;!&ndash;注册中心 &ndash;&gt;-->
-        <module>registry</module>
+        <!--<module>registry</module>-->
         <!--调用能力服务  -->
         <module>service</module>
         <!--服务提供 能力模块-->
@@ -37,7 +37,7 @@
         <!--服务监控模块-->
         <module>monitor</module>
         <!-- 配置中心模块 -->
-        <module>config</module>
+       <!-- <module>config</module>-->
         <!-- 公共服务 -->
         <module>public</module>
     </modules>

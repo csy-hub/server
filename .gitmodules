@@ -1,20 +1,20 @@
 [submodule "config"]
 	path = config
-	url = git@code.tiancloud.com:myyule/config.git
+	url = git@code.tiancloud.com:eics-myyule/server-parent/config.git
 [submodule "gateway"]
 	path = gateway
-	url = git@code.tiancloud.com:myyule/gateway.git
+	url = git@code.tiancloud.com:eics-myyule/server-parent/gateway.git
 [submodule "integration"]
 	path = integration
-	url = git@code.tiancloud.com:myyule/integration.git
+	url = git@code.tiancloud.com:eics-myyule/server-parent/integration.git
 [submodule "pass"]
 	path = pass
-	url = git@code.tiancloud.com:myyule/pass.git
+	url = git@code.tiancloud.com:eics-myyule/server-parent/pass.git
 [submodule "public"]
 	path = public
-	url = git@code.tiancloud.com:myyule/public.git
+	url = git@code.tiancloud.com:eics-myyule/server-parent/public.git
 
 [submodule "service"]
 	path = service
-	url = git@code.tiancloud.com:myyule/service.git
+	url = git@code.tiancloud.com:eics-myyule/server-parent/service.git
 

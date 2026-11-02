@@ -3,7 +3,7 @@
 	url = git@code.tiancloud.com:eics-myyule/server-parent/config.git
 [submodule "gateway"]
 	path = gateway
-	url = git@code.tiancloud.com:eics-myyule/server-parent/gateway.git
+	url = git@github.com:csy-hub/gateway.git
 [submodule "integration"]
 	path = integration
 	url = git@github.com:csy-hub/integration.git

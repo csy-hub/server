@@ -16,5 +16,5 @@
 
 [submodule "service"]
 	path = service
-	url = git@code.tiancloud.com:eics-myyule/server-parent/service.git
+	url = git@github.com:csy-hub/service.git
 

@@ -35,7 +35,7 @@
         <!--服务提供 能力模块-->
         <module>pass</module>
         <!--服务监控模块-->
-        <module>monitor</module>
+<!--        <module>monitor</module>-->
         <!-- 配置中心模块 -->
        <!-- <module>config</module>-->
         <!-- 公共服务 -->

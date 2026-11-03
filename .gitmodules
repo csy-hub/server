@@ -9,7 +9,7 @@
 	url = git@github.com:csy-hub/integration.git
 [submodule "pass"]
 	path = pass
-	url = git@code.tiancloud.com:eics-myyule/server-parent/pass.git
+	url = git@github.com:csy-hub/pass.git
 [submodule "public"]
 	path = public
 	url = git@code.tiancloud.com:eics-myyule/server-parent/public.git

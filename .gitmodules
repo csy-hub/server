@@ -1,6 +1,6 @@
 [submodule "config"]
 	path = config
-	url = git@code.tiancloud.com:eics-myyule/server-parent/config.git
+	url = git@github.com:csy-hub/config.git
 [submodule "gateway"]
 	path = gateway
 	url = git@github.com:csy-hub/gateway.git

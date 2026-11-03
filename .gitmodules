@@ -12,7 +12,7 @@
 	url = git@github.com:csy-hub/pass.git
 [submodule "public"]
 	path = public
-	url = git@code.tiancloud.com:eics-myyule/server-parent/public.git
+	url = git@github.com:csy-hub/public.git
 
 [submodule "service"]
 	path = service
